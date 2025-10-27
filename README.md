@@ -52,7 +52,13 @@ LimitCORE=infinity
 # Only systemd 226 and above support this version.
 TasksMax=infinity
 OOMScoreAdjust=-999
-end of containerd.service ====================================================================================
 
 [Install]
 WantedBy=multi-user.target
+
+end of containerd.service ====================================================================================
+
+sudo systemctl daemon-reload
+sudo systemctl enable containerd
+```
+
