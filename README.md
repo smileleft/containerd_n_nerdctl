@@ -58,6 +58,16 @@ WantedBy=multi-user.target
 
 end of containerd.service ====================================================================================
 
+# Install nerdctl
+```
+# linux
+brew install nerdctl
+
+# binary download
+https://github.com/containerd/nerdctl/releases
+
+```
+
 sudo systemctl daemon-reload
 sudo systemctl enable containerd
 ```
